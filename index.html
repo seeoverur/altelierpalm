@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Atelier Palm | Coffee Shop Event Venue in Charleston, SC</title>
+  <meta name="description" content="Atelier Palm is the event-forward sister brand of Sweet Palm Coffee & Food at 471 King Street, Charleston, SC. Book off-hours coffee events, private gatherings, and brand-friendly celebrations." />
+  <link rel="canonical" href="https://atelierpalm.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Atelier Palm | Coffee Events + Private Venue on King Street" />
+  <meta property="og:description" content="Book off-hours coffee events, private gatherings, and brand-friendly celebrations at 471 King Street, Charleston, SC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://atelierpalm.com/" />
+  <!-- TODO: add a real share image -->
+  <meta property="og:image" content="https://atelierpalm.com/assets/og-image.jpg" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <style>
+    :root {
+      --ap-dark: #0b0b0d;
+      --ap-card: rgba(255,255,255,0.06);
+      --ap-border: rgba(255,255,255,0.10);
+    }
+    body { background: var(--ap-dark); color: #fff; }
+    .text-muted-2 { color: rgba(255,255,255,0.72) !important; }
+
+    /* HERO video background */
+    .hero {
+      position: relative;
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: #000;
+    }
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(1.5) saturate(1.05) contrast(1.05);
+      transform: scale(1.02);
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(1200px 600px at 15% 15%, rgba(0,0,0,0.20), rgba(0,0,0,0.75)),
+        linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.75));
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 5rem 0;
+    }
+    .badge-soft {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.92);
+    }
+    .card-glass {
+      background: var(--ap-card);
+      border: 1px solid var(--ap-border);
+      backdrop-filter: blur(8px);
+    }
+    .divider {
+      border-top: 1px solid rgba(255,255,255,0.10);
+    }
+    .img-tile {
+      height: 240px;
+      border-radius: 1rem;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+      overflow: hidden;
+    }
+    .img-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .section { padding: 4rem 0; }
+    .section-tight { padding: 3rem 0; }
+    .btn-outline-light {
+      border-color: rgba(255,255,255,0.35);
+    }
+    .nav-blur {
+      backdrop-filter: blur(10px);
+      background: rgba(10,10,12,0.55);
+      border-bottom: 1px solid rgba(255,255,255,0.10);
+    }
+    .form-control, .form-select, textarea {
+      background: rgba(255,255,255,0.06) !important;
+      border: 1px solid rgba(255,255,255,0.12) !important;
+      color: #fff !important;
+    }
+    .form-control::placeholder, textarea::placeholder { color: rgba(255,255,255,0.60); }
+    a { color: #fff; }
+    a:hover { color: rgba(255,255,255,0.80); }
+  </style>
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Sweet Palm Coffee & Food (Atelier Palm Events)",
+    "url": "https://atelierpalm.com/",
+    "telephone": "+1-843-327-0347",
+    "email": "info@sweetpalmcoffee.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "471 King Street",
+      "addressLocality": "Charleston",
+      "addressRegion": "SC",
+      "postalCode": "29403",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Top Nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-blur">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">
+        Atelier Palm <span class="text-muted-2 fw-normal">• events</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#spaces">Spaces</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Book</a></li>
+        </ul>
+
+        <div class="d-flex gap-2 ms-lg-3">
+          <a class="btn btn-outline-light btn-sm" href="tel:+18433270347">Call 843-327-0347</a>
+          <a class="btn btn-light btn-sm" href="#contact">Request Availability</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO row (background video/gif + overlay text) -->
+  <header class="hero">
+    <!-- Option A: background video -->
+    <!-- Replace src with your .mp4 (recommended) -->
+    <video class="hero-media" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+      <source src="assets/SPCvid1.mp4" type="video/mp4">
+    </video>
+
+    <!-- Option B: background gif -->
+    <!-- If you prefer a gif, comment the <video> above and uncomment this <img> -->
+    <!-- <img class="hero-media" src="assets/hero.gif" alt="Atelier Palm event venue hero media"> -->
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <span class="badge badge-soft rounded-pill px-3 py-2 mb-3">
+            471 King Street • Charleston, SC
+          </span>
+          <h1 class="display-5 fw-bold mb-3">
+            A coffee shop by day.<br class="d-none d-md-block">
+            A curated event venue after hours.
+          </h1>
+          <p class="lead text-muted-2 mb-4">
+            AtelierPalm.com is the event venue landing page for <span class="fw-semibold">Sweet Palm Coffee &amp; Food</span>.
+            Host off-hours coffee experiences, brand activations, intimate celebrations, and team gatherings—right on King Street.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#contact" class="btn btn-light btn-lg">Check Dates</a>
+            <a href="mailto:info@sweetpalmcoffee.com" class="btn btn-outline-light btn-lg">Email</a>
+            <a href="#events" class="btn btn-outline-light btn-lg">See Event Types</a>
+          </div>
+
+          <div class="mt-4 small text-muted-2">
+            Booking: <a class="text-decoration-none" href="tel:+18433270347">843-327-0347</a> •
+            <a class="text-decoration-none" href="mailto:info@sweetpalmcoffee.com">info@sweetpalmcoffee.com</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card card-glass rounded-4">
+            <div class="card-body p-4">
+              <h2 class="h5 fw-semibold mb-2">Quick Booking Snapshot</h2>
+              <p class="text-muted-2 mb-3">
+                Perfect for events that want a warm, design-forward vibe—without a traditional ballroom feel.
+              </p>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex gap-2 mb-2">
+                  <span class="badge badge-soft">✔</span>
+                  <span class="text-muted-2">Off-hours coffee events + tastings</span>
+                </li>
+                <li class="d-flex gap-2 mb-2">
+                  <span class="badge badge-soft">✔</span>
+                  <span class="text-muted-2">Private gatherings + micro-celebrations</span>
+                </li>
+                <li class="d-flex gap-2 mb-2">
+                  <span class="badge badge-soft">✔</span>
+                  <span class="text-muted-2">Photo-friendly space for content + launches</span>
+                </li>
+                <li class="d-flex gap-2">
+                  <span class="badge badge-soft">✔</span>
+                  <span class="text-muted-2">Catering &amp; coffee service options</span>
+                </li>
+              </ul>
+              <div class="divider my-4"></div>
+              <div class="d-grid gap-2">
+                <a class="btn btn-light" href="#contact">Request Availability</a>
+                <a class="btn btn-outline-light" href="tel:+18433270347">Call to Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- 2nd row: brief about -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Meet Atelier Palm</h2>
+          <p class="text-muted-2 mb-3">
+            Sweet Palm Coffee &amp; Food is known for a bright, coastal energy on King Street—an easy place to gather,
+            connect, and create a little moment out of a normal day.
+          </p>
+          <p class="text-muted-2 mb-0">
+            Atelier Palm extends that same vibe into an <span class="fw-semibold">off-hours event venue</span>—designed for
+            groups who want something elevated, flexible, and welcoming. Think: coffee-forward experiences, team events,
+            micro celebrations, and brand moments that feel like Charleston.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card card-glass rounded-4">
+            <div class="card-body p-4">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p-3 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10);">
+                    <div class="fw-semibold">Location</div>
+                    <div class="text-muted-2 small">471 King Street, Charleston</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10);">
+                    <div class="fw-semibold">Booking</div>
+                    <div class="text-muted-2 small"><a class="text-decoration-none" href="tel:+18433270347">843-327-0347</a></div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="p-3 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10);">
+                    <div class="fw-semibold">Ideal for</div>
+                    <div class="text-muted-2 small">Small-to-mid sized gatherings, launches, workshops, and coffee experiences.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <a class="btn btn-light w-100" href="#contact">Tell Us Your Date + Guest Count</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3rd row: image row with 3 columns -->
+  <section id="spaces" class="section-tight">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+        <div>
+          <h2 class="fw-bold mb-1">A space built for “easy yes” events</h2>
+          <p class="text-muted-2 mb-0">Swap these images with your real venue shots (or keep as placeholders for now).</p>
+        </div>
+        <a class="btn btn-outline-light" href="#contact">Get Availability</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="img-tile">
+            <!-- TODO: replace image -->
+            <img src="assets/decor-palm-tree.jpg" alt="Coffee bar and service area">
+          </div>
+          <div class="mt-3">
+            <div class="fw-semibold">Coffee Bar Experience</div>
+            <div class="text-muted-2 small">Signature drinks, tasting flights, and coffee-forward event menus.</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="img-tile">
+            <!-- TODO: replace image -->
+            <img src="assets/outside-photo.jpg" alt="Seating and lounge area">
+          </div>
+          <div class="mt-3">
+            <div class="fw-semibold">Flexible Seating</div>
+            <div class="text-muted-2 small">Workshop layouts, mingling setups, and presentation-ready arrangements.</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="img-tile">
+            <!-- TODO: replace image -->
+            <img src="assets/sweetpalmcoffee.jpg" alt="Event details and styling">
+          </div>
+
+          <div class="mt-3">
+            <div class="fw-semibold">Design-Forward Moments</div>
+            <div class="text-muted-2 small">A clean, photo-friendly look that elevates brand and celebration content.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next 4 rows: each with 2 columns -->
+
+  <!-- Row 1 (2 cols) -->
+  <section id="events" class="section">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Off-hours coffee events</h2>
+          <p class="text-muted-2 mb-3">
+            Bring your group in for an experience that feels personal—without feeling “staged.”
+            We can shape the flow around your goals: community, team building, celebration, or a brand reveal.
+          </p>
+          <ul class="text-muted-2">
+            <li>Latte art demos &amp; coffee tastings</li>
+            <li>Private morning meetups or evening gatherings</li>
+            <li>Workshops, panels, or creator events</li>
+            <li>Brand activations with curated beverage service</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a class="btn btn-light" href="#contact">Request a Quote</a>
+            <a class="btn btn-outline-light" href="tel:+18433270347">Call 843-327-0347</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="img-tile" style="height: 360px;">
+            <!-- TODO: replace image -->
+            <img src="assets/in-store.jpg" alt="Coffee tasting event vibe">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Row 2 (2 cols) -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <h2 class="fw-bold mb-3">Private gatherings that feel like Charleston</h2>
+          <p class="text-muted-2 mb-3">
+            Looking for a venue that’s intimate, central, and easy for guests?
+            King Street is the backdrop—Atelier Palm is the gathering place.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="card card-glass rounded-4 h-100">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1">Celebrations</div>
+                  <div class="text-muted-2 small">Birthdays, bridal brunches, and milestone moments.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card card-glass rounded-4 h-100">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1">Corporate</div>
+                  <div class="text-muted-2 small">Team events, client meetups, and retreats.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card card-glass rounded-4 h-100">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1">Creators</div>
+                  <div class="text-muted-2 small">Content days, small launches, community nights.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card card-glass rounded-4 h-100">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1">Workshops</div>
+                  <div class="text-muted-2 small">Talks, panels, and hands-on experiences.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-lg-1">
+          <div class="img-tile" style="height: 360px;">
+            <!-- TODO: replace image -->
+            <img src="assets/logo.png" style="width:50%;" alt="Gathering space">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Row 3 (2 cols) -->
+  <section class="section">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Service options that make hosting simple</h2>
+          <p class="text-muted-2 mb-3">
+            Keep it minimal or go fully curated. We’ll align on timing, flow, and the guest experience—so your event feels effortless.
+          </p>
+          <ul class="text-muted-2 mb-4">
+            <li>Curated beverage packages (coffee, matcha, seasonal specials)</li>
+            <li>Light bites or catering coordination (as available)</li>
+            <li>Run-of-show support and vendor timing</li>
+            <li>Content-friendly staging and simple signage moments</li>
+          </ul>
+
+          <div class="card card-glass rounded-4">
+            <div class="card-body p-4">
+              <div class="fw-semibold mb-1">Have a quick question?</div>
+              <div class="text-muted-2 small mb-3">Call or email and we’ll point you in the right direction.</div>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-light" href="tel:+18433270347">Call 843-327-0347</a>
+                <a class="btn btn-outline-light" href="mailto:info@sweetpalmcoffee.com">Email info@sweetpalmcoffee.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="img-tile" style="height: 360px;">
+            <!-- TODO: replace image -->
+            <img src="assets/coffeeswirl.png" alt="Event styling details">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Row 4 (2 cols) + contact -->
+  <section id="contact" class="section-tight">
+    <div class="container">
+      <div class="row gy-4 align-items-start">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Request availability</h2>
+          <p class="text-muted-2 mb-4">
+            Share your date and guest count and we’ll respond with next steps.
+            For faster booking, call <a class="text-decoration-none" href="tel:+18433270347">843-327-0347</a>.
+          </p>
+
+          <form class="card card-glass rounded-4 p-4" action="#" method="post">
+            <!-- TODO: wire up to your form handler (Netlify, Formspree, server endpoint, etc.) -->
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input class="form-control" name="name" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Phone</label>
+                <input class="form-control" name="phone" placeholder="(###) ###-####">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="you@email.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Preferred date</label>
+                <input type="date" class="form-control" name="date">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Guest count</label>
+                <select class="form-select" name="guests">
+                  <option value="">Select</option>
+                  <option>Under 15</option>
+                  <option>15–30</option>
+                  <option>30–50</option>
+                  <option>50+</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Tell us about your event</label>
+                <textarea class="form-control" name="message" rows="4" placeholder="Event type, timing, any special requests..."></textarea>
+              </div>
+              <div class="col-12 d-grid">
+                <button class="btn btn-light btn-lg" type="submit">Send Request</button>
+              </div>
+              <div class="col-12 small text-muted-2">
+                Or email directly: <a class="text-decoration-none" href="mailto:info@sweetpalmcoffee.com">info@sweetpalmcoffee.com</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card card-glass rounded-4">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-semibold mb-2">Find us on King Street</h3>
+              <p class="text-muted-2 mb-3">
+                <span class="fw-semibold">Sweet Palm Coffee &amp; Food</span><br>
+                471 King Street, Charleston, SC 29403
+              </p>
+
+              <div class="img-tile" style="height: 320px;">
+                <!-- TODO: Replace with an embedded Google Map iframe if you want -->
+                <img src="assets/salad.jpg" alt="Charleston street scene placeholder">
+              </div>
+
+              <div class="divider my-4"></div>
+
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="p-3 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10);">
+                    <div class="fw-semibold">Booking phone</div>
+                    <div class="text-muted-2 small"><a class="text-decoration-none" href="tel:+18433270347">843-327-0347</a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10);">
+                    <div class="fw-semibold">Email</div>
+                    <div class="text-muted-2 small"><a class="text-decoration-none" href="mailto:info@sweetpalmcoffee.com">info@sweetpalmcoffee.com</a></div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="p-3 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10);">
+                    <div class="fw-semibold">Website</div>
+                    <div class="text-muted-2 small">
+                      Business site: <a class="text-decoration-none" href="https://www.sweetpalmcoffee.com/" target="_blank" rel="noopener">sweetpalmcoffee.com</a>
+                      <span class="text-muted-2"> • </span>
+                      Venue landing: <span class="text-muted-2">atelierpalm.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4">
+    <div class="container">
+      <div class="divider mb-3"></div>
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 small text-muted-2">
+        <div>© <span id="year"></span> Atelier Palm • Sweet Palm Coffee &amp; Food</div>
+        <div class="d-flex gap-3">
+          <a class="text-decoration-none" href="tel:+18433270347">Call</a>
+          <a class="text-decoration-none" href="mailto:info@sweetpalmcoffee.com">Email</a>
+          <a class="text-decoration-none" href="#about">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

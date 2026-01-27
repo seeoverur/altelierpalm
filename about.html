@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>About Us | Atelier Palm (Sweet Palm Coffee & Food)</title>
+  <meta name="description" content="Learn about Atelier Palm—an event-focused extension of Sweet Palm Coffee & Food on King Street in Charleston, SC." />
+  <link rel="canonical" href="https://atelierpalm.com/about" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <style>
+    :root{
+      --ap-dark:#0b0b0d;
+      --ap-card:rgba(255,255,255,0.06);
+      --ap-border:rgba(255,255,255,0.10);
+    }
+    body{background:var(--ap-dark); color:#fff;}
+    .text-muted-2{color:rgba(255,255,255,0.72)!important;}
+
+    /* Row 1: Hero */
+    .about-hero{
+      position:relative;
+      padding: 5.5rem 0 4.5rem;
+      overflow:hidden;
+      background:#000;
+    }
+    .about-hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(1000px 500px at 20% 20%, rgba(255,255,255,0.06), rgba(0,0,0,0.85)),
+        linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.90));
+      z-index:0;
+    }
+    .about-hero .container{position:relative; z-index:1;}
+    .badge-soft{
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.92);
+    }
+
+    /* Row 2: Paragraph card */
+    .card-glass{
+      background: var(--ap-card);
+      border: 1px solid var(--ap-border);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Row 3: Photos */
+    .img-tile{
+      height: 260px;
+      border-radius: 1rem;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+      overflow:hidden;
+    }
+    .img-tile img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    /* Row 4: Footer */
+    footer{
+      border-top: 1px solid rgba(255,255,255,0.10);
+    }
+    a{color:#fff;}
+    a:hover{color:rgba(255,255,255,0.8);}
+  </style>
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Sweet Palm Coffee & Food (Atelier Palm)",
+    "url": "https://atelierpalm.com/about",
+    "telephone": "+1-843-327-0347",
+    "email": "info@sweetpalmcoffee.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "471 King Street",
+      "addressLocality": "Charleston",
+      "addressRegion": "SC",
+      "postalCode": "29403",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Row 1: Hero Section -->
+  <header class="about-hero">
+    <div class="container">
+      <span class="badge badge-soft rounded-pill px-3 py-2 mb-3 d-inline-block">
+        471 King Street • Charleston, SC
+      </span>
+      <h1 class="display-5 fw-bold mb-2">About Us</h1>
+      <p class="lead text-muted-2 mb-0">
+        Atelier Palm is the event venue landing page for Sweet Palm Coffee &amp; Food—bringing coffee culture and
+        gathering-friendly space together on King Street.
+      </p>
+    </div>
+  </header>
+
+  <!-- Row 2: Short Paragraph -->
+  <section class="py-5">
+    <div class="container">
+      <div class="card card-glass rounded-4">
+        <div class="card-body p-4 p-md-5">
+          <h2 class="h4 fw-semibold mb-3">A space for coffee + connection</h2>
+          <p class="text-muted-2 mb-0">
+            By day, we’re a welcoming coffee shop experience in the heart of Charleston. Off hours, we shift into a
+            flexible venue for private gatherings, brand moments, workshops, and coffee-forward events. The goal is
+            simple: create an atmosphere that feels elevated but easy—where guests can connect, celebrate, and enjoy
+            a curated experience that still feels like your favorite local spot.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Row 3: Photo Row -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-3">
+        <div>
+          <h2 class="h4 fw-semibold mb-1">Inside Atelier Palm</h2>
+          <p class="text-muted-2 mb-0">Swap these placeholders with your real venue photos.</p>
+        </div>
+        <a class="btn btn-outline-light" href="tel:+18433270347">Call to Book</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="img-tile">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=70" alt="Coffee bar and counter">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-tile">
+            <img src="https://images.unsplash.com/photo-1521017450377-1fecd4c7d0c0?auto=format&fit=crop&w=1200&q=70" alt="Seating and gathering space">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-tile">
+            <img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?auto=format&fit=crop&w=1200&q=70" alt="Event details and styling">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Row 4: Footer Row with NAP -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row gy-2 align-items-center">
+        <div class="col-md-8">
+          <div class="small text-muted-2">
+            <strong class="text-white">Sweet Palm Coffee &amp; Food</strong> (Atelier Palm Events) •
+            471 King Street, Charleston, SC 29403 •
+            <a class="text-decoration-none" href="tel:+18433270347">843-327-0347</a> •
+            <a class="text-decoration-none" href="mailto:info@sweetpalmcoffee.com">info@sweetpalmcoffee.com</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <div class="small text-muted-2">
+            Business site:
+            <a class="text-decoration-none" href="https://www.sweetpalmcoffee.com/" target="_blank" rel="noopener">
+              sweetpalmcoffee.com
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="small text-muted-2 mt-3">
+        © <span id="year"></span> Atelier Palm
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
