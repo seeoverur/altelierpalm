@@ -21,12 +21,12 @@
 
   <style>
     :root {
-      --ap-dark: #0b0b0d;
+      --ap-dark: rgba(250, 218, 221, 1);
       --ap-card: rgba(255,255,255,0.06);
       --ap-border: rgba(255,255,255,0.10);
     }
-    body { background: var(--ap-dark); color: #fff; }
-    .text-muted-2 { color: rgba(255,255,255,0.72) !important; }
+    body { background: var(--ap-dark); color: #0a0909; }
+    .text-muted-2 { color: rgba(5, 4, 4, 0.72) !important; }
 
     /* HERO video background */
     .hero {
@@ -45,13 +45,15 @@
       object-fit: cover;
       filter: brightness(.90) saturate(2.5) contrast(2.5);
       transform: scale(1.02);
+      
     }
     .hero-overlay {
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(1200px 600px at 15% 15%, rgba(0,0,0,0.20), rgba(0,0,0,0.75)),
-        linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.75));
+        radial-gradient(1200px 600px at 15% 15%, rgba(243, 238, 238, 0.2), rgba(0,0,0,0.75)),
+        linear-gradient(180deg, rgba(228, 211, 211, 0.15), rgba(37, 33, 33, 0.75));
+        
     }
     .hero-content {
       position: relative;
@@ -60,8 +62,8 @@
     }
     .badge-soft {
       background: rgba(255,255,255,0.10);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: rgba(255,255,255,0.92);
+      border: 1px solid rgba(14, 11, 11, 0.12);
+      color: rgba(36, 29, 29, 0.92);
     }
     .card-glass {
       background: var(--ap-card);
@@ -69,7 +71,7 @@
       backdrop-filter: blur(8px);
     }
     .fw-semibold {
-        color: white;
+        color: black;
     }
     .divider {
       border-top: 1px solid rgba(255,255,255,0.10);
@@ -87,27 +89,29 @@
       object-fit: cover;
       display: block;
     }
-    .section { padding: 4rem 0; }
+    .section { 
+      padding: 4rem 0; 
+    }
     .section-tight { padding: 3rem 0; }
     .btn-outline-light {
-      border-color: rgba(255,255,255,0.35);
+      border-color: rgba(12, 10, 10, 0.35);
     }
     .nav-blur {
       backdrop-filter: blur(10px);
       background: rgba(10,10,12,0.55);
-      border-bottom: 1px solid rgba(255,255,255,0.10);
+      border-bottom: 1px solid rgba(10, 10, 10, 0.1);
     }
     .form-control, .form-select, textarea {
       background: rgba(255,255,255,0.06) !important;
-      border: 1px solid rgba(255,255,255,0.12) !important;
-      color: #fff !important;
+      border: 1px solid rgba(0, 0, 0, 0.12) !important;
+      color: black !important;
     }
     .form-label {
-        color: white;
+        color: black;
     }
-    .form-control::placeholder, textarea::placeholder { color: rgba(255,255,255,0.60); }
-    a { color: #fff; }
-    a:hover { color: rgba(255,255,255,0.80); }
+    .form-control::placeholder, textarea::placeholder { color: rgba(29, 24, 24, 0.6); }
+    a { color: black; }
+    a:hover { color: rgba(27, 23, 23, 0.8); }
   </style>
 
   <!-- LocalBusiness Schema -->
@@ -136,8 +140,8 @@
   <!-- Top Nav -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-blur">
     <div class="container">
-      <a class="navbar-brand fw-semibold" href="#">
-        Atelier Palm <span class="text-muted-2 fw-normal">• Catering Service</span>
+      <a class="navbar-brand fw-semibold text-white" href="#">
+        Atelier Palm <span class="text-white fw-normal">• Catering Service</span>
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
@@ -180,11 +184,11 @@
           <span class="badge badge-soft rounded-pill px-3 py-2 mb-3">
             471 King Street • Charleston, SC
           </span>
-          <h1 class="display-3 fw-bold mb-3">
+          <h1 class="display-3 text-white fw-bold mb-3">
             Charleston Catering Service - Atelier Palm
           </h1>
-          <p class="lead text-muted-2 mb-4">
-            Atelier Palm is a catering service and partner of <span class="fw-semibold">Sweet Palm Coffee</span>.
+          <p class="lead text-white mb-4">
+            Atelier Palm is a catering service and partner of <span class="fw-semibold text-white">Sweet Palm Coffee</span>.
             We cater to brand activations, intimate celebrations, and team gatherings—right on King Street.
             Our goal is to provide coffee catering to private events and businesses.
           </p>
@@ -194,9 +198,9 @@
             <a href="tel:+8433270347" class="btn btn-outline-light btn-lg">Call</a>
           </div>
 
-          <div class="mt-4 small text-muted-2">
-            Booking: <a class="text-decoration-none" href="tel:+18433270347">843-327-0347</a> •
-            <a class="text-decoration-none" href="mailto:info@sweetpalmcoffee.com">info@sweetpalmcoffee.com</a>
+          <div class="mt-4 small text-white">
+            Booking: <a class=" text-white text-decoration-none" href="tel:+18433270347">843-327-0347</a> •
+            <a class="text-white text-decoration-none" href="mailto:info@sweetpalmcoffee.com">info@sweetpalmcoffee.com</a>
           </div>
         </div>
 
@@ -204,31 +208,31 @@
           <div class="card card-glass rounded-4">
             <div class="card-body p-4">
               <h2 class="h5 fw-semibold text-white mb-2">Quick Booking Snapshot</h2>
-              <p class="text-muted-2 mb-3">
+              <p class="text-white mb-3">
                 Perfect for events that want a warm, design-forward vibe—without a traditional ballroom feel.
               </p>
               <ul class="list-unstyled mb-0">
                 <li class="d-flex gap-2 mb-2">
-                  <span class="badge badge-soft">✔</span>
-                  <span class="text-muted-2">Off-hours coffee events + tastings</span>
+                  <span class="badge badge-white">✔</span>
+                  <span class="text-white">Off-hours coffee events + tastings</span>
                 </li>
                 <li class="d-flex gap-2 mb-2">
-                  <span class="badge badge-soft">✔</span>
-                  <span class="text-muted-2">Private gatherings + micro-celebrations</span>
+                  <span class="badge badge-white">✔</span>
+                  <span class="text-white">Private gatherings + micro-celebrations</span>
                 </li>
                 <li class="d-flex gap-2 mb-2">
-                  <span class="badge badge-soft">✔</span>
-                  <span class="text-muted-2">Photo-friendly space for content + launches</span>
+                  <span class="badge badge-white">✔</span>
+                  <span class="text-white">Photo-friendly space for content + launches</span>
                 </li>
                 <li class="d-flex gap-2">
-                  <span class="badge badge-soft">✔</span>
-                  <span class="text-muted-2">Catering &amp; coffee service options</span>
+                  <span class="badge badge-white">✔</span>
+                  <span class="text-white">Catering &amp; coffee service options</span>
                 </li>
               </ul>
               <div class="divider my-4"></div>
               <div class="d-grid gap-2">
                 <a class="btn btn-light" href="#contact">Request Availability</a>
-                <a class="btn btn-outline-light" href="tel:+18433270347">Call to Book</a>
+                <a class="btn btn-light" href="tel:+18433270347">Call to Book</a>
               </div>
             </div>
           </div>
@@ -308,7 +312,7 @@
         <div>
           <h2 class="fw-bold mb-1">Coffee Catering Service Off-Hours </h2>
         </div>
-        <a class="btn btn-outline-light" href="#contact">Get Availability</a>
+        <a class="btn btn-light" href="#contact">Get Availability</a>
       </div>
 
       <div class="row g-4">
@@ -369,7 +373,7 @@
           </ul>
           <div class="d-flex flex-wrap gap-2 mt-3">
             <a class="btn btn-light" href="#contact">Request a Quote</a>
-            <a class="btn btn-outline-light" href="tel:+18433270347">Call 843-327-0347</a>
+            <a class="btn btn-light" href="tel:+18433270347">Call 843-327-0347</a>
           </div>
         </div>
 
@@ -461,7 +465,7 @@
               <div class="text-muted-2 small mb-3">Call or email and we’ll point you in the right direction.</div>
               <div class="d-flex flex-wrap gap-2">
                 <a class="btn btn-light" href="tel:+18433270347">Call 843-327-0347</a>
-                <a class="btn btn-outline-light" href="mailto:info@sweetpalmcoffee.com">Email info@sweetpalmcoffee.com</a>
+                <a class="btn btn-light" href="mailto:info@sweetpalmcoffee.com">Email info@sweetpalmcoffee.com</a>
               </div>
             </div>
           </div>
@@ -483,12 +487,12 @@
       <div class="row gy-4 align-items-start">
         <div class="col-lg-6">
           <h2 class="fw-bold mb-3">Request availability</h2>
-          <p class="text-white mb-4">
+          <p class="mb-4">
             Share your date and guest count and we’ll respond with next steps.
             For faster booking, call <a class="text-decoration-none" href="tel:+18433270347">843-327-0347</a>.
           </p>
 
-          <form class="card card-glass rounded-4 p-4" action="#" method="post">
+          <form class="card card-glass rounded-4 p-4" style="border-color: #000;" action="#" method="post">
             <!-- TODO: wire up to your form handler (Netlify, Formspree, server endpoint, etc.) -->
             <div class="row g-3">
               <div class="col-md-6">
@@ -535,7 +539,7 @@
           <div class="card card-glass rounded-4">
             <div class="card-body p-4">
               <h3 class="h5 fw-semibold mb-2">Find us on King Street</h3>
-              <p class="text-white mb-3">
+              <p class=" mb-3">
                 <span class="fw-semibold">Sweet Palm Coffee &amp; Food</span><br>
                 471 King Street, Charleston, SC 29403
               </p>
