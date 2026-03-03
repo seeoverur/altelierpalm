@@ -48,7 +48,8 @@
       
     }
     .hero-overlay {
-      position: absolute;
+      position: relative;
+      overflow: hidden;
       inset: 0;
       background:
         radial-gradient(1200px 600px at 15% 15%, rgba(243, 238, 238, 0.2), rgba(0,0,0,0.75)),
@@ -174,9 +175,15 @@
   <header class="hero">
     <!-- Option A: background video -->
     <!-- Replace src with your .mp4 (recommended) -->
-    <video class="hero-media" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+    <!-- <video class="hero-media" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
       <source src="assets/sweetpalmevents.MOV" type="video/mp4">
-    </video>
+    </video> -->
+
+      <img 
+    src="" 
+    alt="Sweet Palm mobile espresso bar catering in Charleston" 
+    class="hero-media"
+  />
 
     <!-- Option B: background gif -->
     <!-- If you prefer a gif, comment the <video> above and uncomment this <img> -->
@@ -574,7 +581,7 @@
 
               <div class="img-tile" style="height: 320px;">
                 <!-- TODO: Replace with an embedded Google Map iframe if you want -->
-                <img src="assets/sweetpalmevents6.JPEG" alt="Coffee catering for your event in Charleston, SC logo placeholder">
+                <img src="assets/logo.png" style="width: 75%" alt="Coffee catering for your event in Charleston, SC logo placeholder">
               </div>
 
               <div class="divider my-4"></div>
