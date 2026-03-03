@@ -206,24 +206,46 @@
           <div class="card-simple p-4">
             <h2 class="h5 fw-semibold mb-3">Send a message</h2>
 
-            <!-- TODO: connect to form handler -->
-            <!-- <form action="https://formspree.io/f/xwvnqnwb" method="POST">
-              <div class="mb-3">
-                <input type="text" class="form-control" name="name" placeholder="Name" required>
+            <form class="card card-glass rounded-4 p-4" style="border-color: #000;" action="https://formsubmit.co/info@sweetpalmcoffee.com" method="post">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input class="form-control" name="name" placeholder="Your name" required>
               </div>
-
-              <div class="mb-3">
-                <input type="email" class="form-control" name="email" placeholder="Email" required>
+              <div class="col-md-6">
+                <label class="form-label">Phone</label>
+                <input class="form-control" name="phone" placeholder="(###) ###-####">
               </div>
-
-              <div class="mb-3">
-                <textarea class="form-control" name="message" rows="4" placeholder="Message"></textarea>
+              <div class="col-12">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="you@email.com" required>
               </div>
-
-              <button type="submit" class="btn btn-pink w-100">
-                Send Message
-              </button>
-            </form> -->
+              <div class="col-md-6">
+                <label class="form-label">Preferred date</label>
+                <input type="date" class="form-control" name="date">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Guest count</label>
+                <select class="form-select" name="guests">
+                  <option value="">Select</option>
+                  <option>Under 15</option>
+                  <option>15–30</option>
+                  <option>30–50</option>
+                  <option>50+</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Tell us about your event</label>
+                <textarea class="form-control" name="message" rows="4" placeholder="Event type, timing, any special requests..."></textarea>
+              </div>
+              <div class="col-12 d-grid">
+                <button class="btn btn-pink btn-lg" type="submit">Send Request</button>
+              </div>
+              <div class="col-12 small text-muted-2">
+                Or email directly: <a class="text-decoration-none" href="mailto:info@sweetpalmcoffee.com">info@sweetpalmcoffee.com</a>
+              </div>
+            </div>
+          </form> 
 
             <p class="small text-muted-2 mt-3 mb-0">
               For faster responses, call <a href="tel:+18433270347">843-327-0347</a>.
